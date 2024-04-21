@@ -25,17 +25,17 @@ html,body{
 }
 .header-class h1 {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1em;
 }
 .nav-class ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    margin-left:-200px;
+    
 }
 .nav-class ul li {
-    margin-right: 32px;
+    margin-right: 2em;
 }
 .nav-class ul li a {
     color: white;
