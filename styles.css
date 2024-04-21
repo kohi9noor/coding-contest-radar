@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header-class{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width:100%;
+    height:8vh;
+    
+
+}
+#logo{
+   height: 2px;
+    width: 2px;
+
+}
+.header-class h1 {
+    margin: 0;
+    font-size: 1rem;
+}
+.nav-class ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left:-200px;
+}
+.nav-class ul li {
+    margin-right: 32px;
+}
+.nav-class ul li a {
+    color: white;
+    text-decoration: none;
+}
+main{
+   
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    
+
+    
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top:32px;
+}
+.hero-content {
+/* Remove empty ruleset for .hero-content */
+    
+}
+.cta-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+.cta-buttons a{
+    margin: 16px 16px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.cta-buttons a:hover{
+    background-color: white;
+    color: black;
+}
+.platforms{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.platform-container{
+    display: flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    margin-top: 32px;
+}
+
+
+.platform{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+    
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+    border: 1px solid rgb(255, 255, 255);
+     /* Each .platform takes up 50% of the .platform-container width minus 20px for margin */
+    /*height: 50vh;  Set a specific height */
+    margin: 16px; /* Add margin to ensure divs do not overlap */
+    box-sizing: border-box;
+    width:100%;
+    
+  
+   
+}
+@media (min-width: 600px) {
+    .platform {
+        width: calc(50% - 32px); /* On larger screens, each .platform takes up 50% of the .platform-container width minus 32px for margin */
+        
+    }
+
+}
+.platform-container img {
+    
+    height: 10vh; /* This will make the image take the full height of the .platform-container div */
+    width: 100%; /* This will make the image take the full width of the .platform-container div */
+    object-fit: contain; /* This will ensure that the image covers the entire content box, potentially cropping the image in the process */
+
+}
+.platform a{
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.platform a:hover{
+    background-color: white;
+    color: black;
+}
+footer {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content h3, .footer-content p {
+    margin: 32px 0 10px 0;
+}
+
+.footer-bottom {
+    margin-top: 32px;
+}
