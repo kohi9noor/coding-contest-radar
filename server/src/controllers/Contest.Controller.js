@@ -1,10 +1,12 @@
 const Contest = require("../models/Contest.model");
 
 async function contestRemindController(req, res) {
-  const { userId, contestId, contestName, startTime } = req.body;
+  const { userId, contestId, contestName, startTime, email } = req.body;
+
+  console.log(req.body);
 
   try {
-    const contest = new Contest({ userId, contestId, contestName, startTime });
+    const contest = new Contest(req.body);
 
     await contest.save();
     res.status(201).json({ contest });

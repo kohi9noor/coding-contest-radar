@@ -1,0 +1,12 @@
+# for packages
+node_modules
+
+
+# env variables
+
+.env
+.env.local
+/config
+
+
+

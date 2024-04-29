@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const contestSchema = new mongoose.Schema({
   userId: String,
   email: String,
+  name: String,
   contestId: {
     type: String,
     required: true,
